@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <title>Lab01b</title>
+    <style>
+        h1 {
+            background-color: aqua;
+        }
+        
+        p {
+            padding: 10px;
+        }
+        
+        #username_h {
+            background-color: blue;
+            color: #ed143d;
+        }
+        
+        #userBirth_h {
+            background-color: green;
+            color: #ffffff;
+        }
+        
+        #userAge {
+            background-color: brown;
+            color: #ffffff;
+        }
+        
+        #userPhone {
+            background-color: rgb(77, 165, 42);
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Class 1 Lab</h1>
+        <!-- User Name -->
+        <p id="userName_h" style="width: 200px;"></p>
+
+        <!-- Year of birth -->
+        <p id="userBirth_h" style="width: 200px;"></p>
+
+        <!-- User Age -->
+        <p id="userAge" style="width: 200px;"></p>
+
+        <!-- User Phone -->
+        <p id="userPhone" style="width: 200px;"></p>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        let userName = prompt("Enter your name please!");
+        let userYearOfBirth = prompt("Enter your year of birth?");
+        let userAge = prompt("Enter your age?");
+        let userPhone = prompt("Enter your Phone Number?");
+
+        alert("Your Name is: " + userName +
+            "\n" + "Your Year Of Birth: " + "\n" + userYearOfBirth +
+            "Your Age: " + userAge + "\n" + "Your Phone Number: " + userPhone);
+
+        alert("Thank Your For Submitting Your Data " + userName);
+
+        //console.log()
+        document.getElementById('userName_h').innerHTML = userName;
+        document.getElementById('userBirth_h').innerHTML = userYearOfBirth;
+        document.getElementById('userAge').innerHTML = userAge;
+        document.getElementById('userPhone').innerHTML = userPhone;
+
+        console.log("your age should be Number Only");
+        console.log("your name should be Character Only");
+        console.log("your year of birth should be number Only");
+    </script>
+
+</body>
+
+</html>
