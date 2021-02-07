@@ -40,16 +40,16 @@
     <main>
         <h1>Class 1 Lab</h1>
         <!-- User Name -->
-        <p id="userName_h" style="width: 200px;"></p>
+        <p id="userName_h" style="width: 300px;"></p>
 
         <!-- Year of birth -->
-        <p id="userBirth_h" style="width: 200px;"></p>
+        <p id="userBirth_h" style="width: 300px;"></p>
 
         <!-- User Age -->
-        <p id="userAge" style="width: 200px;"></p>
+        <p id="userAge" style="width: 300px;"></p>
 
         <!-- User Phone -->
-        <p id="userPhone" style="width: 200px;"></p>
+        <p id="userPhone" style="width: 300px;"></p>
 
     </main>
     <footer>
@@ -68,14 +68,15 @@
         alert("Thank Your For Submitting Your Data " + userName);
 
         //console.log()
-        document.getElementById('userName_h').innerHTML = userName;
-        document.getElementById('userBirth_h').innerHTML = userYearOfBirth;
-        document.getElementById('userAge').innerHTML = userAge;
-        document.getElementById('userPhone').innerHTML = userPhone;
+        document.getElementById('userName_h').innerHTML = "Your name is: " + userName;
+        document.getElementById('userBirth_h').innerHTML = "Your Year of birth is: " + userYearOfBirth;
+        document.getElementById('userAge').innerHTML = "Your Age is: " + userAge;
+        document.getElementById('userPhone').innerHTML = "Your Phone Number is: " + userPhone;
 
         console.log("your age should be Number Only");
         console.log("your name should be Character Only");
         console.log("your year of birth should be number Only");
+        console.log("Your Phone Should be number only")
     </script>
 
 </body>
